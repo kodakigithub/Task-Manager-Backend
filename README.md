@@ -24,8 +24,10 @@ Install dependencies
   npm install
 ```
 
-
-
+Deploy the express server
+```bash
+  node index.js
+```
 
 ## Documentation
 
