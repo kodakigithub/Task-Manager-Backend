@@ -31,20 +31,42 @@ Deploy the express server
 
 ## Documentation
 
+Index.js\
+
+This file contains the express logic of all routes and functionality of the api. Express is used to create the server. All the important variables from the other files are also imported to this file.
+
+##
+
+db.js\
+
+This file connects the Server to the mongodB database and defines the schema required to store the data in the database. It uses mongoose to interact with the database.
+
+##
+
+types.js\
+
+This file contains all the input validation logic for the api. Zod is used to validate input.
+
+##
+
+## Features
+
 it performs five operations:
 
-- **Creates a new Task** : Method: POST
+- **Creates a new Task** :
+
+Method: POST
 
 URL: http://localhost:3000/tasks
 
 Body: Select the "raw" option and set the body type to "JSON". Use the following template for the body:
 
 {
-  "title": "Task Title",
-  "description": "Task Description",
-  "due_date": "YYYY-MM-DD",  // Optional
-  "status": "Pending",       // Optional, can be "Pending", "In-Progress", or "Done"
-  "priority": "High"         // Optional, can be "Low", "Medium", or "High"
+  "title": "Task Title",\
+  "description": "Task Description",\
+  "due_date": "YYYY-MM-DD",  // Optional\
+  "status": "Pending",       // Optional, can be "Pending", "In-Progress", or "Done"\
+  "priority": "High"         // Optional, can be "Low", "Medium", or "High"\
 }
 ##
 
@@ -58,7 +80,7 @@ Headers: None required.
 URL Parameter: Replace :id with the task ID you want to delete.
 ##
 
-- **Updates an existing task** : 
+- **Updates an existing task** :\
 Method: PUT
 
 URL: http://localhost:3000/tasks/:id
@@ -66,18 +88,20 @@ URL: http://localhost:3000/tasks/:id
 Headers:
 
 Content-Type: application/json
-Body: Select the "raw" option and set the body type to "JSON". Use the following template for the body:
+Body: Select the "raw" option and set the body type to "JSON". Use the following template for the body:\
+
 {
-  "title": "Updated Task Title",
-  "description": "Updated Task Description",
-  "due_date": "YYYY-MM-DD",  // Optional
-  "status": "In-Progress",   // Optional, can be "Pending", "In-Progress", or "Done"
-  "priority": "Low"          // Optional, can be "Low", "Medium", or "High"
+  "title": "Updated Task Title",\
+  "description": "Updated Task Description",\
+  "due_date": "YYYY-MM-DD",  // Optional\
+  "status": "In-Progress",   // Optional, can be "Pending", "In-Progress", or "Done"\
+  "priority": "Low"          // Optional, can be "Low", "Medium", or "High"\
 }
 
 ##
 
-- **Retrieves all tasks** : Method: GET
+- **Retrieves all tasks** :\
+Method: GET
 
 URL: http://localhost:3000/tasks
 
@@ -91,7 +115,7 @@ order: Sort order (asc for ascending, desc for descending).
 
 ##
 
-- **Retrieves a specific task** : 
+- **Retrieves a specific task** :\
 Method: GET
 
 URL: http://localhost:3000/tasks/:id
@@ -99,18 +123,5 @@ URL: http://localhost:3000/tasks/:id
 Headers: None required.
 
 URL Parameter: Replace :id with the task ID you want to retrieve.
-
-
-
-
-## Features
-
-- Creation of a new task
-- Updation of an existing task
-- Retrieval of all existing tasks
-    - Sort by Due Date
-    - Filter by Status
-- Retrieval of a specific task
-- Deletion of a specific task
 
 
