@@ -87,8 +87,9 @@ URL: http://localhost:3000/tasks/:id
 
 Headers:
 
-Content-Type: application/json
-Body: Select the "raw" option and set the body type to "JSON". Use the following template for the body:
+Content-Type: application/json\
+Body: Select the "raw" option and set the body type to "JSON".\
+Use the following template for the body:
 
 {
   "title": "Updated Task Title",\
@@ -109,9 +110,9 @@ Headers: None required.
 
 Query Parameters: Optional
 
-status: Filter by task status (Pending, In-Progress, Done).
-sortBy: Sort tasks by a field (due_date, priority).
-order: Sort order (asc for ascending, desc for descending).
+Status: Filter by task status (Pending, In-Progress, Done).\
+SortBy: Sort tasks by a field (due_date, priority).\
+Order: Sort order (asc for ascending, desc for descending).\
 
 ##
 
