@@ -51,9 +51,9 @@ This file contains all the input validation logic for the api. Zod is used to va
 
 ## Features
 
-it performs five operations:
+It performs five operations:
 
-- **Creates a new Task** :
+**Creates a new Task** :
 
 Method: POST
 
@@ -70,7 +70,8 @@ Body: Select the "raw" option and set the body type to "JSON". Use the following
 }
 ##
 
-- **Deletes an existing Task** : 
+**Deletes an existing Task** : 
+
 Method: DELETE
 
 URL: http://localhost:3000/tasks/:id
@@ -80,7 +81,8 @@ Headers: None required.
 URL Parameter: Replace :id with the task ID you want to delete.
 ##
 
-- **Updates an existing task** :
+**Updates an existing task** :
+
 Method: PUT
 
 URL: http://localhost:3000/tasks/:id
@@ -101,7 +103,8 @@ Use the following template for the body:
 
 ##
 
-- **Retrieves all tasks** :
+**Retrieves all tasks** :
+
 Method: GET
 
 URL: http://localhost:3000/tasks
@@ -116,7 +119,8 @@ Order: Sort order (asc for ascending, desc for descending).\
 
 ##
 
-- **Retrieves a specific task** :
+**Retrieves a specific task** :
+
 Method: GET
 
 URL: http://localhost:3000/tasks/:id
