@@ -31,19 +31,19 @@ Deploy the express server
 
 ## Documentation
 
-Index.js\
+Index.js
 
 This file contains the express logic of all routes and functionality of the api. Express is used to create the server. All the important variables from the other files are also imported to this file.
 
 ##
 
-db.js\
+db.js
 
 This file connects the Server to the mongodB database and defines the schema required to store the data in the database. It uses mongoose to interact with the database.
 
 ##
 
-types.js\
+types.js
 
 This file contains all the input validation logic for the api. Zod is used to validate input.
 
@@ -80,7 +80,7 @@ Headers: None required.
 URL Parameter: Replace :id with the task ID you want to delete.
 ##
 
-- **Updates an existing task** :\
+- **Updates an existing task** :
 Method: PUT
 
 URL: http://localhost:3000/tasks/:id
@@ -88,7 +88,7 @@ URL: http://localhost:3000/tasks/:id
 Headers:
 
 Content-Type: application/json
-Body: Select the "raw" option and set the body type to "JSON". Use the following template for the body:\
+Body: Select the "raw" option and set the body type to "JSON". Use the following template for the body:
 
 {
   "title": "Updated Task Title",\
@@ -100,7 +100,7 @@ Body: Select the "raw" option and set the body type to "JSON". Use the following
 
 ##
 
-- **Retrieves all tasks** :\
+- **Retrieves all tasks** :
 Method: GET
 
 URL: http://localhost:3000/tasks
@@ -115,7 +115,7 @@ order: Sort order (asc for ascending, desc for descending).
 
 ##
 
-- **Retrieves a specific task** :\
+- **Retrieves a specific task** :
 Method: GET
 
 URL: http://localhost:3000/tasks/:id
